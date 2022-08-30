@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rolles",
+  "info": {
+    "singularName": "rolle",
+    "pluralName": "rolles",
+    "displayName": "Rolle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "administrator": {
+      "type": "boolean"
+    },
+    "manager": {
+      "type": "boolean"
+    },
+    "fitter": {
+      "type": "boolean"
+    }
+  }
+}

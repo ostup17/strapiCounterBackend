@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "userrs",
+  "info": {
+    "singularName": "userr",
+    "pluralName": "userrs",
+    "displayName": "Userr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "login": {
+      "type": "text"
+    },
+    "pass_hash": {
+      "type": "password"
+    },
+    "isArticle": {
+      "type": "text"
+    }
+  }
+}

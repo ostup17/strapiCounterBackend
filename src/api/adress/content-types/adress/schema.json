@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adresses",
+  "info": {
+    "singularName": "adress",
+    "pluralName": "adresses",
+    "displayName": "Adress"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "frame": {
+      "type": "text"
+    },
+    "home_number": {
+      "type": "text"
+    },
+    "flat_number": {
+      "type": "text"
+    },
+    "prefix": {
+      "type": "text"
+    }
+  }
+}

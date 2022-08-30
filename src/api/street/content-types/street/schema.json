@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "streets",
+  "info": {
+    "singularName": "street",
+    "pluralName": "streets",
+    "displayName": "Street",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "street_name": {
+      "type": "text"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application",
+      "mappedBy": "street"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications",
+  "info": {
+    "singularName": "application",
+    "pluralName": "applications",
+    "displayName": "Application",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date_creation": {
+      "type": "date"
+    },
+    "creator": {
+      "type": "text"
+    },
+    "executor": {
+      "type": "text"
+    },
+    "comment": {
+      "type": "text"
+    },
+    "GPS_coordinates": {
+      "type": "text"
+    },
+    "home_number": {
+      "type": "text"
+    },
+    "frame": {
+      "type": "text"
+    },
+    "prefix": {
+      "type": "text"
+    },
+    "type_counter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type-counter.type-counter",
+      "inversedBy": "applications"
+    },
+    "modems": {
+      "type": "json"
+    },
+    "type_modem": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type-modem.type-modem",
+      "inversedBy": "applications"
+    },
+    "vendor_counter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::vendor-counter.vendor-counter",
+      "inversedBy": "applications"
+    },
+    "vendor_modem": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::vendor-modem.vendor-modem",
+      "inversedBy": "applications"
+    },
+    "view_counter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::view-counter.view-counter",
+      "inversedBy": "applications"
+    },
+    "view_modem": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::view-modem.view-modem",
+      "inversedBy": "applications"
+    },
+    "street": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::street.street",
+      "inversedBy": "applications"
+    },
+    "application_status": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::application-status.application-status",
+      "inversedBy": "applications"
+    },
+    "area": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::area.area",
+      "inversedBy": "applications"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::city.city",
+      "inversedBy": "applications"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "applications"
+    },
+    "fotos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::foto.foto",
+      "mappedBy": "application"
+    }
+  }
+}

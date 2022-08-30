@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "application_statuses",
+  "info": {
+    "singularName": "application-status",
+    "pluralName": "application-statuses",
+    "displayName": "Application Status",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "open": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "closed": {
+      "type": "boolean"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application",
+      "mappedBy": "application_status"
+    }
+  }
+}

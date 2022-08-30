@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "view_modems",
+  "info": {
+    "singularName": "view-modem",
+    "pluralName": "view-modems",
+    "displayName": "View Modem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "view_name": {
+      "type": "text"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application",
+      "mappedBy": "view_modem"
+    }
+  }
+}

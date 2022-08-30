@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendor_counters",
+  "info": {
+    "singularName": "vendor-counter",
+    "pluralName": "vendor-counters",
+    "displayName": "Vendor Counter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vendor_name": {
+      "type": "text"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application",
+      "mappedBy": "vendor_counter"
+    }
+  }
+}
